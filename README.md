@@ -1,6 +1,5 @@
 # Automatic Verbalizer for Cloze-style Language Inference
 Match word &amp; label using Simases Neural Network
----
 ### Task
 #### Find mapping between words and labels given small amounts of training data.
 <img src="https://github.com/scyyy/Siamese_Auto_Verbalizer/blob/main/image/task.png" width="700"/>
