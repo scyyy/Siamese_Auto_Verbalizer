@@ -1,14 +1,14 @@
 # Automatic Verbalizer for Cloze-style Language Inference
 Match word &amp; label using Simases Neural Network
-### Task
+### -Task-
 #### Find mapping between words and labels given small amounts of training data.
 <img src="https://github.com/scyyy/Siamese_Auto_Verbalizer/blob/main/image/task.png" width="700"/>
 
-### Triger
+### -Triger-
 #### 原文中的AVS实现的标签词效果不好，分析原因可能为虽然各个标签的代表词存在感情梯度，但并非描述同一个事物的词。
 <img src="https://github.com/scyyy/Siamese_Auto_Verbalizer/blob/main/image/triger.png" width="400"/>
 
-### Motivation
+### -Motivation-
 * 为什么 Cloze-style
   * 可以将多种文本分类任务转化为基于自然语言的推断任务，如新闻分类、情感分类、句间关系判断。
   * cloze-style在小样本分类任务中表现较好，适当调整后可以用于零样本学习。
@@ -18,7 +18,7 @@ Match word &amp; label using Simases Neural Network
   * 直接将Triplet-net的权重赋予其他特征，可以减少训练量。
   * 向量间取（余弦距离等分点 / 积分面积等分点 / 点积等分点）可以在一对反义词间取得表达不同程度情感的代表词，比较符合常识。
 
-### Framework
+### -Framework-
 * <img src="https://github.com/scyyy/Siamese_Auto_Verbalizer/blob/main/image/framework.png" width="700"/>
 
   * 通过WordNet（外部资源库）获取近反义词对，与语料库词表取交集
